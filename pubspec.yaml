@@ -1,0 +1,55 @@
+name: ghost_vault
+description: A secure gallery and media downloader application.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI ve Durum Yönetimi
+  provider: ^6.0.5
+  cupertino_icons: ^1.0.2
+
+  # Güvenlik ve Şifreleme
+  aes_crypt: ^2.0.4 # Dosya şifreleme
+  flutter_secure_storage: ^9.0.0 # Anahtar saklama
+  local_auth: ^2.1.6 # Biyometrik giriş
+
+  # Sensörler ve Donanım
+  shake: ^2.2.0 # Panic button için sallama algılama
+  camera: ^0.10.5+5 # Hırsız selfiyesi için
+  image_picker: ^1.0.4
+  math_expressions: ^2.4.0 # Hesap makinesi mantığı için
+  permission_handler: ^11.0.1 # İzin yönetimi
+  path_provider: ^2.1.1 # Dosya yolları
+
+  # Medya
+  photo_view: ^0.14.0 # Resim görüntüleme
+  video_player: ^2.7.0 # Video oynatma
+  chewie: ^1.7.0 # Video player UI
+  photo_manager: ^2.8.1 # Galeri erişimi
+
+  # Veritabanı
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Tarayıcı ve Ağ
+  flutter_inappwebview: ^6.0.0 # Gizli tarayıcı
+  dio: ^5.3.2 # Dosya indirme
+  html: ^0.15.4 # Web scraping (Instagram vb. için)
+  youtube_explode_dart: ^2.0.2 # Spotify/YouTube için
+
+  # Sosyal Medya (Not: API değişiklikleri nedeniyle bu paketler güncellik gerektirebilir)
+  # tiktok_scraper: ^... (Eğer çalışmazsa RapidAPI kullanılacak)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
