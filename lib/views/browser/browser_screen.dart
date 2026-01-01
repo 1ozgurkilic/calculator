@@ -91,7 +91,12 @@ class _BrowserScreenState extends State<BrowserScreen> {
           Expanded(
             child: InAppWebView(
               initialUrlRequest: URLRequest(url: WebUri("https://google.com")),
-              initialSettings: settings,
+              initialSettings: InAppWebViewSettings(
+                isInspectable: true,
+                mediaPlaybackRequiresUserGesture: false,
+                allowsInlineMediaPlayback: true,
+                useShouldInterceptRequest: true,
+              ),
               onWebViewCreated: (controller) {
                 webViewController = controller;
               },

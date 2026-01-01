@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:ghost_vault/core/theme/app_theme.dart';
 import 'package:ghost_vault/core/models/media_model.dart';
 import 'package:ghost_vault/views/auth/login_screen.dart';
+import 'package:ghost_vault/views/camouflage/calculator_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

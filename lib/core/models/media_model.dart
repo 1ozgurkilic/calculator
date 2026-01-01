@@ -39,7 +39,7 @@ class MediaAdapter extends TypeAdapter<MediaModel> {
 
 enum MediaType { image, video }
 
-class MediaModel {
+class MediaModel extends HiveObject {
   final String id;
   final String path;
   final MediaType type;

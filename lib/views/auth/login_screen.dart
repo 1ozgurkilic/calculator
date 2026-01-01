@@ -19,11 +19,19 @@ class _LoginScreenState extends State<LoginScreen> {
   late ShakeDetector detector;
   final CameraService _cameraService = CameraService();
   int _failedAttempts = 0;
+  bool _isInit = false; // Animasyon için
 
   @override
   void initState() {
     super.initState();
     _initSecurity();
+    
+    // Animasyonu tetikle
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      setState(() {
+        _isInit = true;
+      });
+    });
   }
 
   Future<void> _initSecurity() async {
