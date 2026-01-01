@@ -53,3 +53,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+dependency_overrides:
+  sensors_plus: ^5.0.0 # Gradle Namespace hatası için override
+  xml: ^6.5.0 # Transitive dependency çakışmalarını önlemek için (opsiyonel)
