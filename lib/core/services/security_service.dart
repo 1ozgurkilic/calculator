@@ -1,7 +1,8 @@
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:aes_crypt_null_safe/aes_crypt_null_safe.dart';
-import 'package:path_provider/path_provider.dart';
 import 'dart:io';
+import 'dart:typed_data';
+import 'package:aes_crypt_null_safe/aes_crypt_null_safe.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:path_provider/path_provider.dart';
 
 class SecurityService {
   final FlutterSecureStorage _storage = const FlutterSecureStorage();

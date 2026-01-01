@@ -15,7 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # Güvenlik ve Şifreleme
-  aes_crypt: ^2.0.4 # Dosya şifreleme
+  aes_crypt_null_safe: ^1.0.0 # Dosya şifreleme
   flutter_secure_storage: ^9.0.0 # Anahtar saklama
   local_auth: ^2.1.6 # Biyometrik giriş
 
