@@ -21,7 +21,7 @@ dependencies:
 
   # Sensörler ve Donanım
   shake: ^2.2.0 # Panic button için sallama algılama
-  camera: ^0.10.5+5 # Hırsız selfiyesi için
+  camera: 0.10.5 # Versiyon sabitlendi (Stabilite için)
   image_picker: ^1.0.4
   math_expressions: ^2.4.0 # Hesap makinesi mantığı için
   permission_handler: ^11.0.1 # İzin yönetimi
@@ -31,7 +31,7 @@ dependencies:
   photo_view: ^0.14.0 # Resim görüntüleme
   video_player: ^2.7.0 # Video oynatma
   chewie: ^1.7.0 # Video player UI
-  photo_manager: ^2.8.1 # Galeri erişimi
+  photo_manager: 2.8.0 # Versiyon sabitlendi (Gradle hatası önlemek için)
 
   # Veritabanı
   hive: ^2.2.3
