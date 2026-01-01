@@ -26,7 +26,12 @@ jobs:
           channel: "stable"
 
       - name: Flutter Proje Dosyalarını Oluştur
-        run: flutter create . --project-name=ghost_vault
+        run: |
+          flutter create . --project-name=ghost_vault
+          # Java 17 uyumluluğu ve SDK versiyonunu elle düzelt (sed ile)
+          sed -i 's/JavaVersion.VERSION_1_8/JavaVersion.VERSION_17/g' android/app/build.gradle
+          sed -i 's/compileSdk = flutter.compileSdkVersion/compileSdk = 34/g' android/app/build.gradle
+          sed -i 's/minSdk = flutter.minSdkVersion/minSdk = 24/g' android/app/build.gradle
 
       - name: Bağımlılıkları Yükle
         run: flutter pub get
