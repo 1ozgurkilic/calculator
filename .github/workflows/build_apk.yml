@@ -25,6 +25,9 @@ jobs:
           flutter-version: "3.19.0"
           channel: "stable"
 
+      - name: Flutter Proje Dosyalarını Oluştur
+        run: flutter create . --project-name=ghost_vault
+
       - name: Bağımlılıkları Yükle
         run: flutter pub get
 
